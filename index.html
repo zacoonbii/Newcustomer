@@ -289,7 +289,7 @@
         budgetInput.addEventListener('input', (e) => {
             let value = e.target.value.replace(/[^0-9]/g, ''); // Remove non-numeric characters
             if (value) {
-                value = parseInt(value, 10).toLocaleString('fa-IR');
+                const formattedValue = parseInt(numericValue, 10).toLocaleString('en-US');
             }
             e.target.value = value;
         });
